@@ -1,0 +1,52 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 20px;
+  border: 1px solid darkslategray;
+  border-radius: 4px;
+  min-height: 80px;
+}
+.card:hover {
+  cursor: pointer;
+  background-color: rgba(47, 79, 79, 0.2);
+  transition: all;
+}
+.card .card_link {
+  text-decoration: none;
+  color: inherit;
+}
+.card .card_link .card_title {
+  font-size: 16px;
+}
+.card .card_link .card_title:hover {
+  text-shadow: 1px 0 darkslategray;
+}
+.card .card_link .card_subtitle {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+}
+.card .card_link .card_description {
+  color: black;
+  font-size: 12px;
+}
+.card .add_favourite_btn {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: lightgray;
+  border: 1px solid lightgray;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+}
+.card .add_favourite_btn:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*# sourceMappingURL=RepoCard.module.css.map */

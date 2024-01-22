@@ -1,0 +1,51 @@
+.nav {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 0 20px;
+  background-color: rgba(47, 79, 79, 0.6);
+}
+.nav .logo_block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav .logo_block .logo {
+  height: 40px;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.nav .logo_block .logo:hover {
+  filter: drop-shadow(0 0 2em rgba(100, 108, 255, 0.6666666667));
+}
+.nav .logo_block .logo.react:hover {
+  filter: drop-shadow(0 0 2em rgba(97, 218, 251, 0.6666666667));
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .nav a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+.nav .links {
+  display: flex;
+  gap: 20px;
+}
+.nav .links .nav_link {
+  text-decoration: none;
+}
+.nav .links .nav_link:hover {
+  color: rgba(17, 17, 17, 0.6);
+}
+
+/*# sourceMappingURL=Navigation.module.css.map */

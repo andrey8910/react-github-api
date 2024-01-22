@@ -1,0 +1,63 @@
+
+.card{
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+  padding: 4px 20px;
+  border: 1px solid  darkslategray;
+  border-radius: 4px;
+  min-height: 80px;
+
+  &:hover{
+    cursor: pointer;
+    background-color: rgba(47, 79, 79, 0.2);
+    transition: all;
+  }
+
+  .card_link{
+    text-decoration: none;
+    color: inherit;
+
+    .card_title{
+      font-size: 16px;
+      &:hover{
+        text-shadow: 1px 0 darkslategray;
+      }
+    }
+
+    .card_subtitle{
+      display: flex;
+      gap: 10px;
+      font-size: 12px;
+    }
+
+    .card_description{
+      color: black;
+      font-size: 12px;
+    }
+  }
+
+  .add_favourite_btn{
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0,0,0, 0.1);
+    color: lightgray;
+    border: 1px solid lightgray;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+
+    &:hover{
+      cursor: pointer;
+      background-color: rgba(0,0,0, 0.4);
+
+    }
+
+
+  }
+
+
+}
